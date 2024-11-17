@@ -1,0 +1,62 @@
+CREATE TABLE users (
+    user_id INT IDENTITY(1,1) PRIMARY KEY,
+    username VARCHAR(50) NOT NULL UNIQUE,
+    passwordHash VARCHAR(100) NOT NULL,
+    FirstName VARCHAR(50) NOT NULL,
+    LastName VARCHAR(50) NOT NULL,
+    email VARCHAR(100),	
+    gender VARCHAR(10),
+    DateOfBirth DATETIME	
+    registration_date DATETIME DEFAULT GETDATE()
+);
+
+
+CREATE TABLE Customers (
+    CustomerID INT PRIMARY KEY IDENTITY(1,1), 
+    FirstName NVARCHAR(50) NOT NULL,
+    LastName NVARCHAR(50) NOT NULL,
+    Email NVARCHAR(100) NOT NULL UNIQUE, 
+    PhoneNumber NVARCHAR(15), 
+    DateOfBirth DATE, 
+    LoyaltyPoints INT DEFAULT 0, 
+    DateJoined DATETIME DEFAULT GETDATE(), 
+    IsActive BIT DEFAULT 1
+);
+
+CREATE TABLE products (
+    product_id INT IDENTITY(1,1) PRIMARY KEY,
+    name VARCHAR(100) NOT NULL UNIQUE,
+    description TEXT,
+    category VARCHAR(50) NOT NULL,
+    price DECIMAL(5,2) NOT NULL,
+    size VARCHAR(20),
+    image_url VARCHAR(250),
+    image_data VARBINARY(MAX),
+    available BIT NOT NULL DEFAULT 1,
+    created_at DATETIME DEFAULT GETDATE(),
+);
+
+
+CREATE TABLE Orders (
+    OrderID INT PRIMARY KEY IDENTITY(1,1),
+    CustomerID INT NOT NULL, 
+    UserID INT,
+    OrderDate DATETIME DEFAULT GETDATE(), 
+    TotalPrice DECIMAL(10,2) NOT NULL, 
+
+    FOREIGN KEY (CustomerID) REFERENCES Customers(CustomerID),
+    FOREIGN KEY (UserID) REFERENCES Users(user_id) 
+);
+
+CREATE TABLE OrderDetails (
+    OrderDetailID INT PRIMARY KEY IDENTITY(1,1), 
+    OrderID INT NOT NULL, 
+    ProductID INT NOT NULL, 
+    Quantity INT NOT NULL,
+    UnitPrice DECIMAL(10,2) NOT NULL, 
+    TotalPrice AS (Quantity * UnitPrice) PERSISTED, 
+
+    FOREIGN KEY (OrderID) REFERENCES Orders(OrderID), 
+    FOREIGN KEY (ProductID) REFERENCES Products(product_id) 
+);
+

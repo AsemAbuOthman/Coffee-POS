@@ -1,0 +1,462 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F6BF4545-4BFD-4D85-B7C0-A6C1FBE9504F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Coffee_Shop.My.MyApplication</StartupObject>
+    <RootNamespace>Coffee_Shop</RootNamespace>
+    <AssemblyName>Coffee_Shop</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>C:\MyCoffee\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <UpdateUrl>http://localhost/Coffee_Shop/</UpdateUrl>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Coffee_Shop.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Coffee_Shop.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>coffee_Icon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>4CE3BAB3A7C52677994B9E7A4894903C3F315894</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>Coffee_Shop_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Guna.UI2, Version=2.0.4.6, Culture=neutral, PublicKeyToken=8b9d14aa5142e261, processorArchitecture=MSIL">
+      <HintPath>..\packages\Guna.UI2.WinForms.2.0.4.6\lib\net48\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="MaterialSkin, Version=2.3.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MaterialSkin.2.2.3.1\lib\net48\MaterialSkin.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddCustomers.Designer.vb">
+      <DependentUpon>AddCustomers.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AddCustomers.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddProducts.Designer.vb">
+      <DependentUpon>AddProducts.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AddProducts.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ApplicationEvents.vb" />
+    <Compile Include="Component\ProductAddToBilling.Designer.vb">
+      <DependentUpon>ProductAddToBilling.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Component\ProductAddToBilling.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Component\WidgetProductOrder.Designer.vb">
+      <DependentUpon>WidgetProductOrder.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Component\WidgetProductOrder.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ConfirmUser.Designer.vb">
+      <DependentUpon>ConfirmUser.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ConfirmUser.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Data.Designer.vb">
+      <DependentUpon>Data.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Data.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeleteCustomers.Designer.vb">
+      <DependentUpon>DeleteCustomers.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DeleteCustomers.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeleteProducts.Designer.vb">
+      <DependentUpon>DeleteProducts.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DeleteProducts.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditPass.Designer.vb">
+      <DependentUpon>EditPass.vb</DependentUpon>
+    </Compile>
+    <Compile Include="EditPass.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ForgetPassword.Designer.vb">
+      <DependentUpon>ForgetPassword.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ForgetPassword.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.vb">
+      <DependentUpon>Login.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MDI_Main_Screen.Designer.vb">
+      <DependentUpon>MDI_Main_Screen.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MDI_Main_Screen.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modu_Sql_Conn.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="NewOrder.Designer.vb">
+      <DependentUpon>NewOrder.vb</DependentUpon>
+    </Compile>
+    <Compile Include="NewOrder.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProductOrder.Designer.vb">
+      <DependentUpon>ProductOrder.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ProductOrder.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Recipte.Designer.vb">
+      <DependentUpon>Recipte.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Recipte.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SignUp_Sccessfully1.Designer.vb">
+      <DependentUpon>SignUp_Sccessfully1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SignUp_Sccessfully1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateCustomers.Designer.vb">
+      <DependentUpon>UpdateCustomers.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateCustomers.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateProducts.Designer.vb">
+      <DependentUpon>UpdateProducts.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateProducts.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UpdateUsers.Designer.vb">
+      <DependentUpon>UpdateUsers.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateUsers.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeleteMe.Designer.vb">
+      <DependentUpon>DeleteMe.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DeleteMe.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Users.Designer.vb">
+      <DependentUpon>Users.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Users.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SignUp.Designer.vb">
+      <DependentUpon>SignUp.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SignUp.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SplashScreen.Designer.vb">
+      <DependentUpon>SplashScreen.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SplashScreen.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewCustomers.Designer.vb">
+      <DependentUpon>ViewCustomers.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ViewCustomers.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewProducts.Designer.vb">
+      <DependentUpon>ViewProducts.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ViewProducts.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AddCustomers.resx">
+      <DependentUpon>AddCustomers.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddProducts.resx">
+      <DependentUpon>AddProducts.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Component\ProductAddToBilling.resx">
+      <DependentUpon>ProductAddToBilling.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Component\WidgetProductOrder.resx">
+      <DependentUpon>WidgetProductOrder.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConfirmUser.resx">
+      <DependentUpon>ConfirmUser.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Data.resx">
+      <DependentUpon>Data.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeleteCustomers.resx">
+      <DependentUpon>DeleteCustomers.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeleteProducts.resx">
+      <DependentUpon>DeleteProducts.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditPass.resx">
+      <DependentUpon>EditPass.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ForgetPassword.resx">
+      <DependentUpon>ForgetPassword.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MDI_Main_Screen.resx">
+      <DependentUpon>MDI_Main_Screen.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewOrder.resx">
+      <DependentUpon>NewOrder.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProductOrder.resx">
+      <DependentUpon>ProductOrder.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Recipte.resx">
+      <DependentUpon>Recipte.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SignUp_Sccessfully1.resx">
+      <DependentUpon>SignUp_Sccessfully1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateCustomers.resx">
+      <DependentUpon>UpdateCustomers.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateProducts.resx">
+      <DependentUpon>UpdateProducts.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UpdateUsers.resx">
+      <DependentUpon>UpdateUsers.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeleteMe.resx">
+      <DependentUpon>DeleteMe.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Users.resx">
+      <DependentUpon>Users.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SignUp.resx">
+      <DependentUpon>SignUp.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SplashScreen.resx">
+      <DependentUpon>SplashScreen.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewCustomers.resx">
+      <DependentUpon>ViewCustomers.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewProducts.resx">
+      <DependentUpon>ViewProducts.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Coffee_Shop_TemporaryKey.pfx" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <None Include="Resources\black_coffee.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Coffee.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Coffee_Splash.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cross %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="coffee_Icon.ico" />
+    <None Include="Resources\icons8-remove-80 %282%29.png" />
+    <None Include="Resources\FlateWhite.jpg" />
+    <None Include="Resources\icons8-plus-80.png" />
+    <None Include="Resources\Animation - 1716743400724.gif" />
+    <None Include="Resources\icons8-password-80.png" />
+    <None Include="Resources\icons8-remove-80 %281%29.png" />
+    <None Include="Resources\icons8-upgrade-80.png" />
+    <None Include="Resources\icons8-info-80.png" />
+    <None Include="Resources\icons8-add-80.png" />
+    <None Include="Resources\icons8-remove-80.png" />
+    <None Include="Resources\icons8-view-80.png" />
+    <None Include="Resources\icons8-new-order-80.png" />
+    <None Include="Resources\icons8-view-80 %281%29.png" />
+    <None Include="Resources\icons8-add-tag-80.png" />
+    <None Include="Resources\icons8-cancel-80.png" />
+    <None Include="Resources\icons8-remove-tag-80.png" />
+    <None Include="Resources\icons8-price-tag-usd-80.png" />
+    <None Include="Resources\icons8-update-tag-80.png" />
+    <None Include="Resources\CoffeeLogo.png" />
+    <None Include="Resources\CoffeeShopLogo.jpg" />
+    <None Include="Resources\icons8-coffee-maker-801.png" />
+    <None Include="Resources\icons8-kawaii-coffee-80.png" />
+    <None Include="Resources\icons8-log-out-80.png" />
+    <None Include="Resources\icons8-test-account-80.png" />
+    <None Include="Resources\icons8-customers-100 %281%29.png" />
+    <None Include="Resources\icons8-customers-801.png" />
+    <None Include="Resources\icons8-customers-25.png" />
+    <None Include="Resources\icons8-customers-1001.png" />
+    <None Include="Resources\icons8-order-100 %281%29.png" />
+    <None Include="Resources\icons8-crowd-502.png" />
+    <None Include="Resources\icons8-crowd-50.png" />
+    <None Include="Resources\icons8-coffee-maker-80.png" />
+    <None Include="Resources\icons8-customers-80.png" />
+    <None Include="Resources\icons8-user-80.png" />
+    <None Include="Resources\icons8-customers-100.png" />
+    <None Include="Resources\icons8-log-out-96.png" />
+    <None Include="Resources\icons8-menu-96.png" />
+    <None Include="Resources\icons8-user-96.png" />
+    <None Include="Resources\icons8-coffee-maker-100.png" />
+    <None Include="Resources\icons8-home-96.png" />
+    <None Include="Resources\icons8-setting-96.png" />
+    <None Include="Resources\icons8-bill-52.png" />
+    <None Include="Resources\icons8-order-80.png" />
+    <None Include="Resources\icons8-search-96.png" />
+    <None Include="Resources\icons8-cash-96.png" />
+    <None Include="Resources\Animation - 1716228377346.gif" />
+    <None Include="Resources\Correct.gif" />
+    <None Include="Resources\eye %282%29.png" />
+    <None Include="Resources\eye %281%29.png" />
+    <None Include="Resources\coffee_Icon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.8">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.8 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>
