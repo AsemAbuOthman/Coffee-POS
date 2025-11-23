@@ -9,19 +9,24 @@ Coffee managment system for manging coffee, customers, users and orders for a co
 
 ## Images
 ### Login
-![login](https://github.com/user-attachments/assets/4816db08-8a4f-4866-a30f-eafe26c07cf3)
+![login](https://github.com/user-attachments/assets/aa2d2fab-914e-4f20-8fe0-a9d87ce56c98)
+
   
 ### Sign Up 
-![info](https://github.com/user-attachments/assets/64b12ec1-8445-458d-89bd-fe74053ddc47)
+![info](https://github.com/user-attachments/assets/0d997367-25d9-42c5-ab74-81ed186dbf86)
+
   
 ### User Info 
-![UserInfo](https://github.com/user-attachments/assets/60fc083f-f117-4c39-8ce4-0798e581da73)
+![UserInfo](https://github.com/user-attachments/assets/6eb787f8-f97b-449a-8c0c-67b3fbb382e1)
+
 
 ### View Customers  
-![viewCust](https://github.com/user-attachments/assets/93123274-f736-49a8-a1b9-a43a38ad3af7)
+![viewCust](https://github.com/user-attachments/assets/c250042e-25b7-4f86-8dcd-96231885774d)
+
 
 ### View Products
-![viewProducts](https://github.com/user-attachments/assets/9d317dab-3301-4d87-8f52-e534b2410bba)
+![viewProducts](https://github.com/user-attachments/assets/70686f63-b7ce-44bf-9db7-7443ff8d62f8)
 
 ### Order
-![order](https://github.com/user-attachments/assets/0c7bda3c-c696-42c1-9f32-6f635c6376c8)
+![order](https://github.com/user-attachments/assets/221ca306-1910-4d4a-94fd-1f98111969a8)
+
