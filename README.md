@@ -8,11 +8,11 @@ Coffee managment system for manging coffee, customers, users and orders for a co
 - other desgin frameworks
 
 ## Images
-### Login
+### Splash
 ![login](https://github.com/user-attachments/assets/aa2d2fab-914e-4f20-8fe0-a9d87ce56c98)
 
   
-### Sign Up 
+### Login  
 ![info](https://github.com/user-attachments/assets/0d997367-25d9-42c5-ab74-81ed186dbf86)
 
   
